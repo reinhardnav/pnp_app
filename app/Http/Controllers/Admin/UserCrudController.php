@@ -39,8 +39,8 @@ class UserCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        if(!backpack_user()->hasRole('Admin'))
-            Abort(403,"Access Denied");
+        //if(!backpack_user()->hasRole('Admin'))
+       //     Abort(403,"Access Denied");
 
         CRUD::column('first_name')
             ->label('First Name');
